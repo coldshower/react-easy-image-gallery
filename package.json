@@ -1,0 +1,48 @@
+{
+  "name": "react-easy-image-gallery",
+  "version": "1.11.0",
+  "description": "A beautiful &lt;Gallery /> inspired by layouts of flickr and Google Photos",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config docs/webpack.config.js --hot",
+    "build:dev": "webpack --config docs/webpack.config.js",
+    "build": "babel src/gallery.js --out-file dist/gallery.js -s",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build:dev && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coldshower/react-easy-image-gallery.git"
+  },
+  "author": "John Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coldshower/react-easy-image-gallery/issues"
+  },
+  "homepage": "https://github.com/coldshower/react-easy-image-gallery#readme",
+  "keywords": [
+    "react",
+    "image grid",
+    "gallery",
+    "photo",
+    "masonry"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-styled-components": "^1.10.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-icons": "^3.2.2",
+    "styled-components": "^4.1.3",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  }
+}
